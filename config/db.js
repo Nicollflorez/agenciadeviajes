@@ -1,8 +1,8 @@
-import Sequelize  from "sequelize";
+import Sequelize from "sequelize";
 
-const db = new Sequelize('agenciadeviajes', 'root', '', {
-    host: 'localhost',
-    dialect: '3306',
+const db = new Sequelize('agenciadeviajes_stairsword', 'agenciadeviajes_stairsword', '9ef22beef1ff1a508630e46adc61b1b409fe2aa1', {
+    host: 'c31pz.h.filess.io',
+    port: 61002,
     dialect: 'mysql',
     define: {
         timestamps: false
@@ -13,7 +13,7 @@ const db = new Sequelize('agenciadeviajes', 'root', '', {
         acquire: 30000,
         idle: 10000
     },
-    operatorAliases: false
+    operatorsAliases: false
 });
 
 export default db;
